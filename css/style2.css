@@ -1,0 +1,72 @@
+/* style.css */
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #000000; /* Cor de fundo do menu */
+    border-bottom: 4px solid #434544; /* Linha divisória no fundo do menu */
+    border-radius: 8px; /* Borda arredondada no menu */
+}
+
+.menu li {
+    margin: 0 20px; /* Espaçamento entre os itens do menu */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white; /* Cor do texto do menu */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px; /* Espaçamento interno do link */
+    border-radius: 10px; /* Borda arredondada nos cantos do link */
+    transition: background-color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.menu li a:hover {
+    background-color: #1d1f1d; /* Cor de fundo ao passar o mouse */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        margin: 30px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
